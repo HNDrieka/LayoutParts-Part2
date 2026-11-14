@@ -1,2 +1,21 @@
 @charset "UTF-8";
+.haikei {
+  height: 500px;
+  background: url("../../image/coffee-background.jpg");
+}
 
+.sono2 {
+  background-repeat: no-repeat;
+}
+
+.sono3 {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.sono4 {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
