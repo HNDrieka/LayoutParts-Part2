@@ -1,1 +1,41 @@
 @charset "UTF-8";
+.contents{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.fukidashi {
+  font-size: 16px;
+  background-color: #fad396;
+  border: solid 5px #815a0a;
+  line-height: 16px;
+  width: 500px;
+  padding: 20px;
+  border-radius: 20px;
+  position: relative;
+}
+
+.fukidashi::before {
+  content: "";
+  position: absolute;
+  bottom: -30px;
+  left: 30px;
+  width: 0;
+  height: 0;
+  border-top: 30px solid #815a0a;
+  border-left: 30px solid transparent;
+  border-right: 30px solid transparent;
+}
+
+.fukidashi::after {
+  content: "";
+  position: absolute;
+  bottom: -24px;
+  left: 36px;
+  width: 0;
+  height: 0;
+  border-top: 24px solid #fad396;
+  border-left: 24px solid transparent;
+  border-right: 24px solid transparent;
+}
