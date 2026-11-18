@@ -2,3 +2,158 @@
 
 /* カード内の画像は以下のURLを使用して下さい */
 /* https://picsum.photos/id/1005/200/300 */
+
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;}
+
+.anime1 {
+  height: 200px;
+  width: 200px;
+  background-color: #76ff826b;
+}
+
+.fade-in {
+  animation: fadein 4s ease 0s 1 normal;
+}
+
+@keyframes fadein {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.fade-out {
+  animation: fadeout 4s 4s forwards;
+}
+
+@keyframes fadeout {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+.kaiten {
+  animation: rotate 4s linear infinite;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.anime2 {
+  height: 200px;
+  width: 200px;
+  background-color: #331aefd0;
+}
+
+.irohenkou {
+  transition: 0.5s;
+}
+.irohenkou:hover {
+  background-color: #ff27e2c9;
+}
+
+.kaiten2 {
+  transition: 0.5s;
+}
+.kaiten2:hover {
+  transform: rotate(360deg);
+}
+
+.up20 {
+  transition: 0.5s;
+}
+.up20:hover {
+  transform: translateY(-20%);
+}
+
+.slide20 {
+  transition: 0.5s;
+}
+.slide20:hover {
+  transform: translateX(20%);
+}
+
+.tateninobiru {
+  transition: 0.5s;
+}
+.tateninobiru:hover {
+  height: 300px;
+}
+
+.yokoninobiru {
+  transition: 0.5s;
+}
+.yokoninobiru:hover {
+  width: 500px;
+}
+
+.wakusen {
+  transition: 0.5s;
+  box-sizing: border-box;
+}
+.wakusen:hover {
+  border: 10px #00ffe5 solid;
+}
+
+.kage {
+  transition: 0.5s;
+}
+.kage:hover {
+  box-shadow: 8px 11px 10px 3px #06031ed0;
+}
+
+.circle-kaiten {
+  width: 50px;
+  height: 50px;
+  border-top: 10px solid #14ff4bcd;
+  border-bottom: 10px solid #ecf1f2;
+  border-left: 10px solid #ecf1f2;
+  border-right: 10px solid #ecf1f2;
+  border-radius: 100%;
+  animation: rotate 1.1s linear infinite;
+}
+
+.cardlist {
+  display: flex;
+}
+.card {
+  width: 300px;
+  padding: 20px;
+  border: 1px solid #000000;
+  border-left: 0;
+  transition: 0.5s;
+}
+.card:hover{
+  box-shadow: 0px 0px 10px 3px #424242d0;
+  z-index: 1;
+}
+.card:first-child {
+  border-left: 1px solid #000000;
+}
+.gazou {
+  width: 150px;
+  height: 150px;
+  background-image: url("https://picsum.photos/id/1005/200/300");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center 50%;
+  border-radius: 100%;
+  margin: 0 auto;
+}
+.bunshou {
+  padding: 20px 0 0 0;
+}
