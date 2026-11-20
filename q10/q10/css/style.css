@@ -1,1 +1,79 @@
 @charset "UTF-8";
+.buttons {
+  display: flex;
+  justify-content: center;
+}
+
+.button {
+  padding: 0px 15px;
+  line-height: 50px;
+  text-align: center;
+  margin-left: 30px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.button:first-child {
+  margin-left: 0;
+}
+
+
+.red {
+  color: #fff;
+  background-color: #fd0f0fd9;
+}
+
+.blue {
+  color: #fff;
+  background-color: #170ffdd9;
+}
+
+.green {
+  color: #000;
+  background-color: #0ffd0fd9;
+}
+
+.red.kage {
+  box-shadow: 0px 5px 0px 0px rgba(63, 5, 5, 0.851);
+}
+
+.blue.kage{
+  box-shadow: 0px 5px 0px 0px rgba(5, 13, 63, 0.851);
+}
+
+.green.kage {
+  box-shadow: 0px 5px 0px 0px rgba(5, 63, 5, 0.851);
+}
+
+.push:active {
+  transform: translateY(5px);
+  box-shadow: none;
+}
+
+.irokawaru {
+  color: #67c5ff;
+  border: 4px #67c5ff double;
+  transition: 0.5s;
+}
+.irokawaru:hover {
+  background-color: #fffbef;
+}
+
+.senkawaru {
+  color: #67c5ff;
+  border: 4px #75caff dotted;
+  transition: 0.5s;
+}
+.senkawaru:hover {
+  border: 4px dashed;
+}
+
+.irokieru {
+  color: #0079a5f8;
+  background-color: #d0edfff8;
+  border: 4px #67c5ff dashed;
+  transition: 0.5s;
+}
+.irokieru:hover {
+  color: #67c5ff;
+  background-color: #ffffff;
+}
